@@ -6,9 +6,11 @@
 2. noctalia
 3. hyprland
 4. matugen
+
 **Zorunlu olmayanlar ama sistemimde kullandiklarim:**
 **eger bunlari kurmazsaniz kucuk hatalar cikabilir matugende ilgili yerleri silerseniz hatalar gider**
-**kurmazsaniz hyprland.lua da degistirmeniz gereken yerler olabilir SUPER+E,SUPER+Q 
+**kurmazsaniz hyprland.lua da degistirmeniz gereken yerler olabilir SUPER+E,SUPER+Q** 
+
 1-vscodium ( dosya duzenlemesi vs yapmak icin )
 2-kitty (terminal)
 3-btop ( gorev yoneticisi gibi )
