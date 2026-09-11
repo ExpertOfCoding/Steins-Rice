@@ -24,8 +24,9 @@
    
 **noctalia indirin ve .config/noctalia yi kendi sisteminizdeki config noctalia ile degistirin ya da yeni klasor olusturun eger yoksa ayni isimlerle**
 **skwd-wall-v2 kurun ve su ayarlari degistirn:**
-1.Color > Theme > Color Source. Bu ayardan Matugeni secin.
-2. Simdilik bu yeter daha sonra buraya donucez
+1. Color > Theme > Color Source. Bu ayardan Matugeni secin.
+3. Simdilik bu yeter daha sonra buraya donucez
+
 **simdi bos .config>>matugen klasorlerini olusturun varsa da cd ile icine girin ( ikiside klasor )**
 1. sonra icine githubdaki "./config/matugen" icindeki her seyi koyun.
 2. ardindan bos bir terminal acin ve **skwd-wall-v2** yazin icine
