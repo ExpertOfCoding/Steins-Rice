@@ -11,14 +11,14 @@
 **eger bunlari kurmazsaniz kucuk hatalar cikabilir matugende ilgili yerleri silerseniz hatalar gider**
 **kurmazsaniz hyprland.lua da degistirmeniz gereken yerler olabilir SUPER+E,SUPER+Q** 
 
-1-vscodium ( dosya duzenlemesi vs yapmak icin )
-2-kitty (terminal)
-3-btop ( gorev yoneticisi gibi )
-4-yazi ( Dosya yoneticisi )
-5-VLC (Muzik/Video calar)
-6-LibreWolf (Tarayici)
-7-Calibre (E-kitap Epub)
-8- zsh ve powerlevel10k ( NE OLDUKLARINI BILMIYORSANIZ KURMAYIN !!! )
+1.vscodium ( dosya duzenlemesi vs yapmak icin )
+2.kitty (terminal)
+3.btop ( gorev yoneticisi gibi )
+4.yazi ( Dosya yoneticisi )
+5.VLC (Muzik/Video calar)
+6.LibreWolf (Tarayici)
+7.Calibre (E-kitap Epub)
+8. zsh ve powerlevel10k ( NE OLDUKLARINI BILMIYORSANIZ KURMAYIN !!! )
 
 **HATA CIKAR VEYA ANLAMADIGINIZ BIR YER OLURSA ILETISIME GECIN, ISSUE DE ACABILIRSINIZ**
    
