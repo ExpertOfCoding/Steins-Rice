@@ -1,0 +1,282 @@
+[audio]
+enable_sounds = true
+notification_sound = "/home/labmember001/Musics/SoundEffects/konata-teco.mp3"
+sound_volume = 0.61999998614192009
+
+[backdrop]
+enabled = true
+tint_intensity = 0.0
+
+[bar.default]
+background_opacity = 0.29999999329447746
+capsule_fill = "surface"
+capsule_opacity = 0.62
+center = [ "group:g3" ]
+contact_shadow = true
+end = [ "widget", "group:g4", "group:g5", "group:g6" ]
+start = [ "group:g2", "group:g1", "clock", "lyrics", "hve-trigger" ]
+thickness = 37
+
+    [bar.default.dead_zone.actions]
+    left = "screenshot-region"
+    middle = "exec skwd wall toggle"
+    scroll_down = "dock-hide"
+    scroll_up = "dock-show"
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface"
+    id = "g1"
+    members = [ "media", "now-playing" ]
+    opacity = 0.62000000476837158
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface"
+    id = "g2"
+    members = [ "launcher", "workspaces", "tray" ]
+    opacity = 0.62000000476837158
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface"
+    id = "g3"
+    members = [ "clipboard", "audio_visualizer", "notifications" ]
+    opacity = 0.62000000476837158
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface"
+    id = "g4"
+    members = [ "network_tx", "network_rx", "network" ]
+    opacity = 0.62000000476837158
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface"
+    id = "g5"
+    members = [ "brightness", "volume" ]
+    opacity = 0.62000000476837158
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface"
+    id = "g6"
+    members = [ "control-center", "session" ]
+    opacity = 0.62000000476837158
+    padding = 6.0
+
+[brightness]
+enable_ddcutil = true
+minimum_brightness = 0.029999999329447746
+
+[control_center]
+hidden_tabs = [ "power", "bluetooth" ]
+
+    [[control_center.shortcuts]]
+    type = "caffeine"
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
+
+    [[control_center.shortcuts]]
+    type = "notification"
+
+    [[control_center.shortcuts]]
+    type = "mic_mute"
+
+[dock]
+cross_axis_padding = 0
+enabled = false
+icon_size = 16
+item_spacing = 0
+main_axis_padding = 0
+show_dots = true
+
+[hooks]
+logging_out = "mpv ~/Musics/SoundEffects/konata-logoff.mp3 --no-video --volume=50"
+shutting_down = "mpv ~/Musics/SoundEffects/konata-logoff.mp3 --no-video"
+started = "mpv ~/Musics/SoundEffects/konata-logon.mp3 --no-video --volume=50"
+
+[location]
+address = "Istanbul"
+
+[lockscreen]
+blur_intensity = 0.87999998033046722
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@DP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[nightlight]
+enabled = true
+
+[plugin_settings."h465855hgg/lyrics"]
+poll_interval_ms = 250
+
+[plugin_settings."tranzem/media-lyrics"]
+panel_open_near_click = true
+panel_placement = "attached"
+
+[plugins]
+enabled = [ "linux-fertxo/hyprland-visual-editor", "h465855hgg/lyrics", "oldirtty/color_picker" ]
+
+[shell]
+font_family = "3270 Nerd Font Mono"
+password_style = "random"
+polkit_agent = true
+screen_time_enabled = true
+settings_window_translucent = true
+
+    [shell.panel]
+    transparency_mode = "glass"
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Oxocarbon"
+custom_palette = "colors"
+mode = "dark"
+shell_mode = "dark"
+source = "custom"
+wallpaper_scheme = "m3-content"
+
+[wallpaper]
+enabled = false
+
+    [wallpaper.default]
+    path = "/home/labmember001/Pictures/Wallpapers/wallhaven-mlyeo1.jpg"
+
+    [wallpaper.last]
+    path = "/home/labmember001/Pictures/Wallpapers/wallhaven-mlyeo1.jpg"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/labmember001/Pictures/Wallpapers/wallhaven-mlyeo1.jpg"
+
+[widget.audio_visualizer]
+bands = 128
+show_when_idle = true
+width = 141
+
+    [widget.audio_visualizer.actions]
+    left = "panel-toggle control-center media"
+    scroll_down = "volume-down"
+    scroll_up = "volume-up"
+
+[widget.brightness]
+color = "primary"
+show_label = false
+
+[widget.clock]
+color = "primary"
+enabled = false
+scale = 1.25
+
+[widget.control-center]
+color = "primary"
+glyph = "navigation-filled"
+
+    [widget.control-center.actions]
+    right = "exec vlc --random \"Musics/\" & sleep 0.2 && kitty --hold neofetch --image_size 200 & sleep 0.3 && kitty --hold hush & sleep 0.4 && kitty --hold cava & kitty --hold btop"
+
+[widget.hve-trigger]
+enabled = false
+type = "linux-fertxo/hyprland-visual-editor:hve-trigger"
+
+[widget.lyrics]
+active_color = "primary"
+cover_size = 26
+display_mode = "lyrics"
+inactive_color = "secondary"
+max_chars = 40
+secondary_color = "on_surface"
+secondary_font_size = 31
+secondary_line_mode = "romanization"
+show_romanization = true
+type = "h465855hgg/lyrics:lyrics"
+
+    [widget.lyrics.actions]
+    right = "exec vlc & disown"
+
+[widget.media]
+enabled = false
+
+[widget.network]
+color = "tertiary"
+show_label = false
+
+[widget.network_rx]
+color = "secondary"
+show_glyph = false
+
+[widget.network_tx]
+color = "primary"
+show_glyph = false
+
+[widget.now-playing]
+font_family = "Adwaita Mono"
+type = "tranzem/media-lyrics:now-playing"
+
+[widget.session]
+color = "error"
+
+[widget.tray]
+drawer = true
+
+[widget.volume]
+color = "primary"
+
+[widget.widget]
+type = "oldirtty/color_picker:widget"
+
+[widget.workspaces]
+urgent_color = "tertiary"
