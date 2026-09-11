@@ -1,0 +1,58 @@
+{
+  "dark": {
+    "palette": {
+      "Accent": "#{{colors.primary.default.hex_stripped}}",
+      "AlternateBase": "#{{colors.surface_container.default.hex_stripped}}",
+      "Base": "#{{colors.surface.default.hex_stripped}}",
+      "BrightText": "#{{colors.error.default.hex_stripped}}",
+      "BrightText-disabled": "#{{colors.error.default.hex_stripped}}",
+      "Button": "#{{colors.surface_container_high.default.hex_stripped}}",
+      "ButtonText": "#{{colors.on_surface.default.hex_stripped}}",
+      "ButtonText-disabled": "#{{colors.outline.default.hex_stripped}}",
+      "Highlight": "#{{colors.primary_container.default.hex_stripped}}",
+      "HighlightedText": "#{{colors.on_primary_container.default.hex_stripped}}",
+      "HighlightedText-disabled": "#{{colors.outline.default.hex_stripped}}",
+      "Link": "#{{colors.tertiary.default.hex_stripped}}",
+      "LinkVisited": "#{{colors.scrim.default.hex_stripped}}",
+      "PlaceholderText": "#{{colors.outline.default.hex_stripped}}",
+      "PlaceholderText-disabled": "#{{colors.outline.default.hex_stripped}}",
+      "Text": "#{{colors.on_surface.default.hex_stripped}}",
+      "Text-disabled": "#{{colors.outline.default.hex_stripped}}",
+      "ToolTipBase": "#{{colors.surface_container_highest.default.hex_stripped}}",
+      "ToolTipText": "#{{colors.on_surface.default.hex_stripped}}",
+      "ToolTipText-disabled": "#{{colors.outline.default.hex_stripped}}",
+      "Window": "#{{colors.surface_container.default.hex_stripped}}",
+      "WindowText": "#{{colors.on_surface.default.hex_stripped}}",
+      "WindowText-disabled": "#{{colors.outline.default.hex_stripped}}"
+    },
+    "use_custom": true
+  },
+  "light": {
+    "palette": {
+      "Accent": "#{{colors.primary.default.hex_stripped}}",
+      "AlternateBase": "#{{colors.surface_container.default.hex_stripped}}",
+      "Base": "#{{colors.surface.default.hex_stripped}}",
+      "BrightText": "#{{colors.error.default.hex_stripped}}",
+      "BrightText-disabled": "#{{colors.error.default.hex_stripped}}",
+      "Button": "#{{colors.surface_container_high.default.hex_stripped}}",
+      "ButtonText": "#{{colors.on_surface.default.hex_stripped}}",
+      "ButtonText-disabled": "#{{colors.outline.default.hex_stripped}}",
+      "Highlight": "#{{colors.primary_container.default.hex_stripped}}",
+      "HighlightedText": "#{{colors.on_primary_container.default.hex_stripped}}",
+      "HighlightedText-disabled": "#{{colors.outline.default.hex_stripped}}",
+      "Link": "#{{colors.tertiary.default.hex_stripped}}",
+      "LinkVisited": "#{{colors.scrim.default.hex_stripped}}",
+      "PlaceholderText": "#{{colors.outline.default.hex_stripped}}",
+      "PlaceholderText-disabled": "#{{colors.outline.default.hex_stripped}}",
+      "Text": "#{{colors.on_surface.default.hex_stripped}}",
+      "Text-disabled": "#{{colors.outline.default.hex_stripped}}",
+      "ToolTipBase": "#{{colors.surface_container_highest.default.hex_stripped}}",
+      "ToolTipText": "#{{colors.on_surface.default.hex_stripped}}",
+      "ToolTipText-disabled": "#{{colors.outline.default.hex_stripped}}",
+      "Window": "#{{colors.surface_container.default.hex_stripped}}",
+      "WindowText": "#{{colors.on_surface.default.hex_stripped}}",
+      "WindowText-disabled": "#{{colors.outline.default.hex_stripped}}"
+    },
+    "use_custom": true
+  }
+}

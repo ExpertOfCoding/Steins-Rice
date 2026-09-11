@@ -1,0 +1,107 @@
+{
+  "components": {
+    "wallpaperSelector": {
+      "activePreset": {
+        "slices": ""
+      },
+      "cornerBL": 50,
+      "cornerBR": 0,
+      "cornerTL": 20,
+      "cornerTR": 0,
+      "displayMode": "slices",
+      "enabled": true,
+      "expandedWidth": 924.0,
+      "gridLayout": "justified",
+      "hexCurve": "cylinder",
+      "hexShape": "rhombus",
+      "presets": {
+        "slices": []
+      },
+      "roundCorners": true,
+      "showTypeBadges": false,
+      "skewOffset": 25,
+      "sliceEdgeTilt": 5,
+      "sliceHeight": 520,
+      "sliceSpacing": -30.0,
+      "sliceStageX": 0.0,
+      "sliceStageY": 0.0,
+      "sliceWidth": 135,
+      "sliceWobble": false,
+      "sliceWobbleStrength": 100.0,
+      "visibleCount": 12
+    }
+  },
+  "defaultMatugenConfig": "/home/labmember001/.config/matugen/config.toml",
+  "effects": {
+    "autoTheme": "Oceanic Next"
+  },
+  "externalMatugenCommand": "",
+  "filterBar": {
+    "orientation": "horizontal",
+    "show": {
+      "colors": true,
+      "favourites": true,
+      "folder": true,
+      "random": true,
+      "resolution": true,
+      "sort": {
+        "color": true,
+        "date": true,
+        "minimalist": true,
+        "pop": true,
+        "recent": true,
+        "res": true,
+        "richness": true
+      },
+      "tagcloud": true,
+      "theme": true,
+      "type": {
+        "all": true,
+        "static": true,
+        "video": true,
+        "we": true
+      }
+    },
+    "visualStyle": "match"
+  },
+  "general": {
+    "filterBarAlwaysVisible": false
+  },
+  "integrations": [],
+  "matugen": {
+    "colorIndex": 0,
+    "contrast": 0.62,
+    "mode": "auto",
+    "schemeType": "scheme-vibrant"
+  },
+  "noctalia": {
+    "hoverPreview": true
+  },
+  "performance": {
+    "imageOptimizePreset": "quality"
+  },
+  "selector": {
+    "livePreview": true
+  },
+  "sources": {
+    "youtube": {
+      "enabled": true
+    }
+  },
+  "theme": {
+    "authority": "skwd",
+    "engine": "matugen",
+    "policy": "wallpaper",
+    "scheme": "vibrant",
+    "style": "pastel"
+  },
+  "transition": {
+    "durationMs": 1200,
+    "shader": "inkwell-drop"
+  },
+  "wallpaperMute": false,
+  "weRender": {
+    "disableParticles": false,
+    "fps": 60
+  }
+}

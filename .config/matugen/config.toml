@@ -1,0 +1,56 @@
+[config]
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hyprland.lua'
+output_path = '~/themes/matugen/colors-hyprland.lua'
+[templates.waybar]
+input_path = '~/.config/matugen/templates/waybar.css'
+output_path = '~/.config/waybar/theme.css'
+[templates.rofi]
+input_path = '~/.config/matugen/templates/rofi.rasi'
+output_path = '~/.config/rofi/colors/onedark.rasi'
+[templates.swaync]
+input_path = '~/.config/matugen/templates/swaync.css'
+output_path = '~/.config/swaync/style.css'
+#post_hook = 'swaync-client -R && swaync-client -rs'
+[templates.noctalia]
+input_path = '~/.config/matugen/templates/noctalia.json'
+output_path = '~/.config/noctalia/palettes/colors.json'
+post_hook = 'noctalia msg config-reload'
+# VS Code matugen extension
+[templates.vscode-raw]
+input_path = './templates/vscodeium'
+output_path = '~/.cache/matugen/vscode-colors'
+
+[templates.vscode-json]
+input_path = './templates/vscodeium.json'
+output_path = '~/.cache/matugen/vscode-colors.json'
+
+[templates.calibre]
+input_path = './templates/calibre.calibre-palette'
+output_path = '~/.cache/matugen/calibre.calibre-palette'
+
+[templates.librewolf]
+input_path = './templates/librewolf.css'
+output_path = '~/.config/librewolf/librewolf/b6e07eqe.default-default/chrome/userChrome.css'
+
+[templates.kitty]
+input_path = './templates/kitty.conf'
+output_path = '~/.config/kitty/kitty.conf'
+
+[templates.yazi]
+input_path = './templates/yazi.toml'
+output_path = '~/.config/yazi/theme.toml'
+
+
+[templates.btop]
+input_path = './templates/btop.theme'
+output_path = '~/.config/btop/themes/CustomTheme.theme'
+
+[templates.qt6ct]
+input_path = './templates/qt.conf'
+output_path = '~/.config/qt6ct/colors/matugen.conf'
+
+[templates.qt5ct]
+input_path = './templates/qt.conf'
+output_path = '~/.config/qt5ct/colors/matugen.conf'
+

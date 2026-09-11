@@ -1,0 +1,607 @@
+
+@define-color primary                    alpha({{colors.primary.default.hex}}, 0.86205);
+@define-color on_primary                 alpha({{colors.on_primary.default.hex}}, 0.86205);
+@define-color primary_container          alpha({{colors.primary_container.default.hex}}, 0.86205);
+@define-color on_primary_container       alpha({{colors.on_primary_container.default.hex}}, 0.86205);
+
+@define-color secondary                  alpha({{colors.secondary.default.hex}}, 0.86205);
+@define-color on_secondary               alpha({{colors.on_secondary.default.hex}}, 0.86205);
+@define-color secondary_container        alpha({{colors.secondary_container.default.hex}}, 0.86205);
+@define-color on_secondary_container     alpha({{colors.on_secondary_container.default.hex}}, 0.86205);
+
+@define-color tertiary                   alpha({{colors.secondary.default.hex}}, 0.86205);
+@define-color on_tertiary                alpha({{colors.on_secondary.default.hex}}, 0.86205);
+@define-color tertiary_container         alpha({{colors.secondary_container.default.hex}}, 0.86205);
+@define-color on_tertiary_container      alpha({{colors.on_secondary_container.default.hex}}, 0.86205);
+
+/* =========================================================
+   Surface palette
+   ========================================================= */
+
+@define-color surface                    alpha({{colors.surface.default.hex}}, 0.86205);
+@define-color on_surface                 alpha({{colors.on_surface.default.hex}}, 0.86205);
+@define-color surface_container_highest  alpha({{colors.surface_container_highest.default.hex}}, 0.86205);
+
+@define-color inverse_surface            alpha({{colors.inverse_surface.default.hex}}, 0.86205);
+@define-color inverse_on_surface         alpha({{colors.inverse_on_surface.default.hex}}, 0.86205);
+@define-color inverse_primary            alpha({{colors.inverse_primary.default.hex}}, 0.86205);
+@define-color primary_fixed              alpha({{colors.primary_fixed.default.hex}}, 0.86205);
+@define-color primary_fixed_dim          alpha({{colors.primary_fixed_dim.default.hex}}, 0.86205);
+@define-color on_primary_fixed_variant   alpha({{colors.on_primary_fixed_variant.default.hex}}, 0.86205);
+@define-color source_color               alpha({{colors.primary.default.hex}}, 0.86205);
+
+
+/* =========================================================
+   Generic UI tokens
+   ========================================================= */
+
+@define-color text                       alpha({{colors.primary_fixed.default.hex}}, 0.86205);
+@define-color background                 alpha({{colors.surface.default.hex}}, 0.86205);
+@define-color shadow                     rgba(0, 0, 0, 0.86205);
+
+@define-color background-alt             alpha({{colors.on_primary_fixed_variant.default.hex}}, 0.86205);
+@define-color selected                   alpha({{colors.inverse_primary.default.hex}}, 0.86205);
+@define-color hover                      alpha({{colors.inverse_primary.default.hex}}, 0.86205);
+@define-color urgent                     alpha({{colors.primary_fixed_dim.default.hex}}, 0.86205);
+
+
+/* =========================================================
+   Floating notifications
+   ========================================================= */
+
+@define-color panel-bg                   alpha({{colors.surface_container.default.hex}}, 0.86205);
+@define-color panel-border               alpha({{colors.secondary.default.hex}}, 0.86205);
+
+@define-color notification-bg            @panel-bg;
+@define-color notification-border        @panel-border;
+@define-color notification-hover         alpha({{colors.surface_container_high.default.hex}}, 0.86205);
+
+
+/* =========================================================
+   Control center
+   ========================================================= */
+
+@define-color control-bg                 alpha({{colors.surface.default.hex}}, 0.86205);
+@define-color control-border             alpha({{colors.outline_variant.default.hex}}, 0.86205);
+@define-color control-surface            alpha({{colors.surface_container_highest.default.hex}}, 0.86205);
+
+@define-color control-accent             alpha({{colors.primary.default.hex}}, 0.86205);
+@define-color control-accent-hover       alpha({{colors.inverse_primary.default.hex}}, 0.86205);
+
+
+* {
+  color: @text;
+  font-size: 14px;
+  font-family: "JetBrains Mono Nerd Propo";
+  transition: all 0.3s ease-in-out;
+}
+
+/* =========================================================
+   Transparent empty window
+   ========================================================= */
+
+.blank-window {
+  background: transparent;
+}
+
+/* =========================================================
+   Control center window
+   ========================================================= */
+
+.control-center {
+  background: @control-bg;
+  border: 1px solid @control-border;
+  border-radius: 18px;
+  box-shadow: 0 0 4px 0 alpha(@shadow, 0.4);
+  margin: 10px;
+  padding: 12px;
+}
+
+/* =========================================================
+   Label widget
+   ========================================================= */
+
+.widget-label {
+  background-color: @source_color;
+  border-radius: 18px;
+  font-weight: bold;
+  padding: 14px;
+}
+
+.widget-label label {
+  color: @on_primary_container;
+  font-size: 18px;
+}
+
+/* =========================================================
+   Notifications inside control center
+   ========================================================= */
+
+.widget-notifications {
+  margin-top: 8px;
+  padding: 0;
+}
+
+.control-center .notification-row .notification-background,
+.control-center .notification-row .notification-background .notification.critical {
+  background-color: @inverse_primary;
+  border-radius: 18px;
+  margin: 12px 0 0 0;
+  padding: 0 6px;
+}
+
+.control-center .notification-row .notification-background .notification.critical {
+  color: @urgent;
+}
+
+.control-center .notification-row .notification-background .notification .notification-content {
+  margin: 0 6px;
+  padding: 8px 6px 2px 2px;
+}
+
+.control-center .notification-row .notification-background .notification > *:last-child > * {
+  min-height: 3.4em;
+}
+
+/* =========================================================
+   Notification actions inside control center
+   ========================================================= */
+
+.control-center .notification-row .notification-background .notification > *:last-child > * .notification-action {
+  background: alpha(@primary_container, 0.6);
+  border-radius: 20px;
+  color: @text;
+  margin: 6px;
+}
+
+.control-center .notification-row .notification-background .notification > *:last-child > * .notification-action:hover {
+  background: @primary_container;
+}
+
+.control-center .notification-row .notification-background .notification > *:last-child > * .notification-action:active {
+  background-color: @primary_container;
+}
+
+/* =========================================================
+   Close button inside control center notifications
+   ========================================================= */
+
+.control-center .notification-row .notification-background .close-button {
+  background: transparent;
+  border-radius: 6px;
+  color: @text;
+  margin: 0;
+  padding: 4px;
+}
+
+.control-center .notification-row .notification-background .close-button:hover {
+  background-color: @primary_container;
+}
+
+.control-center .notification-row .notification-background .close-button:active {
+  background-color: @primary_container;
+}
+
+/* =========================================================
+   Progress bars
+   ========================================================= */
+
+progressbar,
+progress,
+trough {
+  border-radius: 12px;
+}
+
+progressbar {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* =========================================================
+   Notification groups
+   ========================================================= */
+
+.notification-group {
+  margin: 2px 8px;
+}
+
+.notification-group-headers {
+  color: @text;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.notification-group-icon {
+  color: @text;
+}
+
+.notification-group-collapse-button,
+.notification-group-close-all-button {
+  background: transparent;
+  border-radius: 6px;
+  color: @text;
+  margin: 4px;
+  padding: 4px;
+}
+
+.notification-group-collapse-button:hover,
+.notification-group-close-all-button:hover {
+  background: alpha(@primary_container, 0.7);
+}
+
+/* =========================================================
+   Widget: title / clear all
+   ========================================================= */
+
+.widget-title {
+  margin-top: 18px;
+}
+
+.widget-title label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.widget-title button {
+  background: @inverse_surface;
+  border-radius: 34px;
+  color: @inverse_on_surface;
+  font-weight: bold;
+  padding: 3px 2px;
+}
+
+.widget-title button:hover {
+  background-color: alpha(@primary, 0.7);
+}
+
+/* =========================================================
+   Widget: do not disturb
+   ========================================================= */
+
+.widget-dnd {
+  background: @inverse_primary;
+  border-radius: 18px;
+  font-size: 16px;
+  margin-top: 12px;
+  padding: 14px;
+}
+
+.widget-dnd label {
+  font-size: 16px;
+}
+
+.widget-dnd > switch {
+  background: @surface_container_highest;
+  border-radius: 20px;
+  box-shadow: none;
+  font-size: initial;
+  min-width: 36px;
+  padding: 4px;
+}
+
+.widget-dnd > switch:hover {
+  background: alpha(@surface_container_highest, 0.6);
+  transition: all 300ms ease-in-out;
+}
+
+.widget-dnd > switch:checked {
+  background: @primary;
+  transition: all 300ms ease-in-out;
+}
+
+.widget-dnd > switch:checked:hover {
+  background: alpha(@primary, 0.7);
+  transition: all 300ms ease-in-out;
+}
+
+.widget-dnd > switch slider {
+  background: @on_surface;
+  border-radius: 24px;
+  transition: all 300ms ease-in-out;
+}
+
+.widget-dnd > switch:checked slider {
+  background: @surface_container_highest;
+  transition: all 300ms ease-in-out;
+}
+
+/* =========================================================
+   Widget: buttons grid
+   ========================================================= */
+
+.widget-buttons-grid {
+  font-size: x-large;
+  /* padding: 8px; */
+}
+
+.widget-buttons-grid > flowbox > flowboxchild {
+  margin: 0 12px 0 0;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild:last-child {
+  margin: 0;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+  background: @primary_container;
+  border-radius: 14px;
+  color: @on_primary_container;
+  min-height: 52px;
+  min-width: 66px;
+  padding: 6px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button label {
+  font-size: 16px;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+  background: @primary;
+  transition: all 0.3s ease-in-out;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
+  background: @primary;
+  color: @on_primary;
+}
+
+/* =========================================================
+   Widget: MPRIS / media player
+   ========================================================= */
+
+.widget-mpris {
+  background: @inverse_primary;
+  border-radius: 18px;
+  color: @inverse_on_primary;
+  margin-bottom: 12px;
+  padding: 12px;
+}
+
+.widget-mpris > box > button {
+  color: @primary;
+}
+
+.widget-mpris-player > box {
+  background-color: @inverse_primary;
+  padding: 8px;
+}
+
+.widget-mpris .widget-mpris-player button {
+  background-color: alpha(@primary_container, 0.7);
+  border-radius: 50%;
+  color: @on_primary_container;
+  margin: 0 16px;
+  min-height: 48px;
+  min-width: 48px;
+  transition: all 200ms ease-in-out;
+}
+
+.widget-mpris .widget-mpris-player button:hover {
+  background-color: @primary_container;
+  color: @on_primary_container;
+  transition: all 200ms ease-in-out;
+}
+
+.widget-mpris-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.widget-mpris-subtitle {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* =========================================================
+   Widget: volume
+   ========================================================= */
+
+.widget-volume {
+  background: @tertiary;
+  border-radius: 18px;
+  margin-top: 12px;
+  padding: 14px;
+}
+
+.widget-volume > box > label:first-child {
+  font-size: 20px;
+}
+
+.widget-volume > box > label,
+.widget-volume > box > button label {
+  color: @on_tertiary;
+}
+
+.widget-volume scale trough {
+  background-color: @tertiary_container;
+  margin: 0 12px;
+  min-height: 12px;
+}
+
+.widget-volume scale highlight {
+  background-color: @on_tertiary_container;
+  border-radius: 0 12px 12px 0;
+}
+
+.widget-volume scale slider {
+  background-color: transparent;
+  border-radius: 50%;
+  min-height: 16px;
+  min-width: 16px;
+}
+
+.widget-volume row image {
+  background-color: @primary_container;
+  border-radius: 6px;
+  padding: 3px;
+  -gtk-icon-size: 16px;
+}
+
+.per-app-volume {
+  background-color: transparent;
+  margin: 12px 0;
+}
+
+.per-app-volume scale trough {
+  margin: 0 24px 0 10px;
+}
+
+/* =========================================================
+   Widget: backlight
+   ========================================================= */
+
+.widget-backlight {
+  background: @tertiary;
+  border-radius: 18px;
+  margin-top: 12px;
+  padding: 14px;
+}
+
+.widget-backlight label {
+  color: @on_tertiary;
+  font-size: 18px;
+}
+
+.widget-backlight scale trough {
+  background-color: @tertiary_container;
+  margin: 0 28px 0 16px;
+  min-height: 12px;
+}
+
+.widget-backlight scale highlight {
+  background-color: @on_tertiary_container;
+  border-radius: 0 12px 12px 0;
+}
+
+.widget-backlight scale slider {
+  background-color: transparent;
+  border-radius: 50%;
+  min-height: 16px;
+  min-width: 16px;
+}
+
+* {
+  color: @text;
+  font-size: 14px;
+  font-family: "JetBrains Mono Nerd Propo";
+  transition: all 0.3s ease-in-out;
+}
+
+/* =========================================================
+   Notification row
+   ========================================================= */
+
+.notification-row {
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================================================
+   Floating notification background
+   ========================================================= */
+
+.floating-notifications.background .notification-row .notification-background {
+  background: @panel-bg;
+  border: 1px solid @panel-border;
+  border-radius: 18px;
+  box-shadow: 0 0 6px 0 alpha(@shadow, 0.4);
+  margin: 12px;
+  padding: 0;
+}
+
+.floating-notifications.background .notification-row .notification-background .notification {
+  padding: 6px;
+  border-radius: 12px;
+}
+
+.floating-notifications.background .notification-row .notification-background .notification.critical {
+  border: 2px solid @urgent;
+}
+
+/* =========================================================
+   Notification content
+   ========================================================= */
+
+.floating-notifications.background .notification-row .notification-background .notification .notification-content {
+  margin: 14px;
+}
+
+.floating-notifications.background .notification-row .notification-background .notification > *:last-child > * {
+  min-height: 3.4em;
+}
+
+/* =========================================================
+   Notification actions
+   ========================================================= */
+
+.floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action {
+  background-color: alpha(@on_primary_fixed_variant, 0.4);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  margin: 6px;
+}
+
+.floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action:hover {
+  background-color: alpha(@selected, 0.4);
+  border: 1px solid @selected;
+}
+
+.floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action:active {
+  background-color: @selected;
+  color: @background;
+}
+
+/* =========================================================
+   Notification image / text
+   ========================================================= */
+
+.image {
+  margin: 10px 20px 10px 0;
+  filter: brightness(0) invert(1);
+}
+
+.summary {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.body {
+  font-size: 0.8rem;
+}
+
+/* =========================================================
+   Close button
+   ========================================================= */
+
+.floating-notifications.background .notification-row .notification-background .close-button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  margin: 6px;
+  padding: 2px;
+}
+
+.floating-notifications.background .notification-row .notification-background .close-button:hover {
+  background-color: @selected;
+}
+
+.floating-notifications.background .notification-row .notification-background .close-button:active {
+  background-color: @selected;
+  color: @background;
+}
+
+/* =========================================================
+   Progress bars
+   ========================================================= */
+
+.notification.critical progress {
+  background-color: @selected;
+}
+
+.notification.low progress,
+.notification.normal progress {
+  background-color: @selected;
+}
+
