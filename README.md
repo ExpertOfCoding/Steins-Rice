@@ -6,6 +6,7 @@
 2. noctalia
 3. hyprland
 4. matugen
+5. dolphin ( BUNU KESINLIKLE INDIRIN SONRA SILERSINIZ KURDUKTAN SONRA ISINIZI KOLAYLASTIRACAKTIR )
 
 **Zorunlu olmayanlar ama sistemimde kullandiklarim:**
 **eger bunlari kurmazsaniz kucuk hatalar cikabilir matugende ilgili yerleri silerseniz hatalar gider**
