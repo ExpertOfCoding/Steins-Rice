@@ -12,7 +12,7 @@
 1.Color > Theme > Color Source. Bu ayardan Matugeni secin.
 2. Simdilik bu yeter daha sonra buraya donucez
 **simdi bos .config>>matugen klasorlerini olusturun varsa da cd ile icine girin ( ikiside klasor )**
-1. sonra icine @matugen-folderin icindeki her seyi koyun.
+1. sonra icine githubdaki "./config/matugen" icindeki her seyi koyun.
 2. ardindan bos bir terminal acin ve **skwd-wall-v2** yazin icine
 3. yeni bir duvar kagidi secin ordan eger yoksa Pictures>>Wallpapers olusturun ve oraya resimler indirin
 ....
@@ -20,6 +20,7 @@
 1. home klasorunuze alt klasor ekleyin >themes>matugen (bu ikiside klasor olacak ic ice)
 2. yeni bir dosya olusturun : colors-hyprland.lua ( BUNU ILERLEYEN ADIMLARDA OTOMATIK YAPTIRICAZ MATUGEN ILE)
 3. dosyayi vscodium ile acin ya da kullandiginiz kod editoruyle acin
+4. yada bu ilk 3 adimi yapmak yerine githubdan klasoru kopyalayin
 ```
 return {
     primary         = "rgba(c9bfffee)",
@@ -99,4 +100,5 @@ hl.config({
     },
 })
 ```
-6.
+7. 6. Adimi yapmak yerine .config/hypr klasorunu kendi sisteminizdeki hypr klasorunun yerine koyun ekstra olarak kisayollar ve araclar var.
+8. SON ADIM noctalia-config.toml'i indirin ve noctalia config'inizle degistirin
