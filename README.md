@@ -6,8 +6,21 @@
 2. noctalia
 3. hyprland
 4. matugen
-5. ( ZORUNLU DEGIL AMA LAZIM OLACAK ) - vscodium ( dosya duzenlemesi vs yapmak icin )
+**Zorunlu olmayanlar ama sistemimde kullandiklarim:**
+**eger bunlari kurmazsaniz kucuk hatalar cikabilir matugende ilgili yerleri silerseniz hatalar gider**
+**kurmazsaniz hyprland.lua da degistirmeniz gereken yerler olabilir SUPER+E,SUPER+Q 
+1-vscodium ( dosya duzenlemesi vs yapmak icin )
+2-kitty (terminal)
+3-btop ( gorev yoneticisi gibi )
+4-yazi ( Dosya yoneticisi )
+5-VLC (Muzik/Video calar)
+6-LibreWolf (Tarayici)
+7-Calibre (E-kitap Epub)
+8- zsh ve powerlevel10k ( NE OLDUKLARINI BILMIYORSANIZ KURMAYIN !!! )
 
+**HATA CIKAR VEYA ANLAMADIGINIZ BIR YER OLURSA ILETISIME GECIN, ISSUE DE ACABILIRSINIZ**
+   
+**noctalia indirin ve .config/noctalia yi kendi sisteminizdeki config noctalia ile degistirin ya da yeni klasor olusturun eger yoksa ayni isimlerle**
 **skwd-wall-v2 kurun ve su ayarlari degistirn:**
 1.Color > Theme > Color Source. Bu ayardan Matugeni secin.
 2. Simdilik bu yeter daha sonra buraya donucez
